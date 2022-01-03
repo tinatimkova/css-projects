@@ -113,12 +113,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* end reset browser styles */
+
 body {
   color: #fff;
   font-family: Roboto;
   display: grid;
-  grid-template-rows: 1fr 1.2fr 1fr;
+  grid-template-rows: 1fr 1.2fr 1.2fr 0.4fr;
 }
 
 h2 {
@@ -149,13 +151,17 @@ div.top > div {
   padding-top: 1em;
 }
 
-ul.navTop {
+ul.navTop,
+ul.navBottom {
   list-style: none;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+ul.navTop {
   position: absolute;
   top: 3%;
   right: 3%;
-  text-transform: uppercase;
-  line-height: 20px;
 }
 
 div.top {
@@ -170,14 +176,26 @@ div.middle {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-div.middle h5 {
-  margin: 0.5rem auto 0;
-  width: 80%;
-  text-align: center;
-  margin-bottom: 90%;
+div.middle h5,
+div.bottom h5 {
   font-size: 41px;
   font-weight: normal;
   border-bottom: 2px solid #fff;
+  text-transform: capitalize;
+  padding-bottom: 0.5em;
+}
+
+div.middle h5 {
+  margin: 0.5rem auto 0;
+  margin-bottom: 90%;
+  width: 80%;
+  text-align: center;
+}
+
+div.bottom h5 {
+  width: 25%;
+  margin: 0.5em 0 0.5em 5%;
+  text-align: left;
 }
 
 div.middle a {
@@ -205,14 +223,63 @@ div.middle a {
 .approach,
 .applications {
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 60%;
   background-size: auto auto;
+  background-position: 50% 60%;
 }
 
 div.bottom {
-  width: 100%;
   background-image: url(images/Rectangle.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+div.bottom p {
+  width: 25%;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-bottom: 18%;
+  line-height: 24px;
+}
+
+div.bottom a {
+  margin-left: 5%;
+}
+
+footer {
+  background-color: #e5e5e5;
+  color: #858585;
+  background-image: url(images/logoFooter.png);
+  background-repeat: no-repeat;
+  background-position: 2em 2em;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+div.copyright,
+ul.navBottom,
+div.email {
+  display: inline-block;
+  margin-left: 15%;
+  vertical-align: middle;
+}
+
+ul.navBottom,
+div.email {
+  margin-top: 2em;
+}
+
+div.email input {
+  width: 100%;
+  padding: 3em 3em 0.5em 0.1em;
+  border: none;
+  border-bottom: 1px solid #858585;
+  background-color: #e5e5e5;
+  background-image: url(images/arrowGrey.png);
+  background-repeat: no-repeat;
+  background-position: right 78%;
+  color: #bbbfbf;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 100%;
+  line-height: 16.41px;
 }
