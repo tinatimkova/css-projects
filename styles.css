@@ -114,7 +114,7 @@ table {
   border-spacing: 0;
 }
 /* end reset browser styles */
-main {
+body {
   color: #fff;
   font-family: Roboto;
 }
@@ -151,9 +151,6 @@ a {
 
 .header {
   width: 30%;
-  position: absolute;
-  top: 25%;
-  left: 5%;
 }
 
 section.top {
@@ -161,8 +158,12 @@ section.top {
   background-image: url(images/Infinity.png);
   background-repeat: no-repeat;
   background-position: 1em 1em;
-  width: 100%;
-  height: 40vh; /*660px;*/
+  position: absolute;
+}
+
+section.middle {
+  height: 35%;
+  position: absolute;
 }
 
 .top h2 {
@@ -198,19 +199,15 @@ section.top {
   background-position: center 80%;
   background-size: auto auto;
   width: 33%;
-  height: 100%;
-}
-
-section.middle {
-  height: 40vh; /*729px;*/
 }
 
 section.bottom {
   width: 100%;
-  height: 40vh; /*982px;*/
+  height: 35%; /*982px;*/
   background-image: url(images/Rectangle.png);
   background-repeat: no-repeat;
   background-size: contain;
+  position: absolute;
 }
 
 section h5 {
