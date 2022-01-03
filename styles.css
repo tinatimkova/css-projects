@@ -117,9 +117,39 @@ table {
 body {
   color: #fff;
   font-family: Roboto;
+  display: grid;
+  grid-template-rows: 1fr 1.2fr 1fr;
 }
 
-main ul {
+h2 {
+  width: 30%;
+  font-weight: normal;
+  font-size: 59px;
+  text-transform: capitalize;
+  margin: 7% 0 7% 5%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding-right: 1.3em;
+  margin-right: 1em;
+  background-image: url(images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: right 40%;
+  cursor: pointer;
+}
+
+div.top > div {
+  display: inline-block;
+  margin: 0 0 2% 5%;
+  border-top: 2px solid #fff;
+  padding-top: 1em;
+}
+
+ul.navTop {
   list-style: none;
   position: absolute;
   top: 3%;
@@ -128,50 +158,32 @@ main ul {
   line-height: 20px;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.header li,
-.science li,
-.approach li,
-.applications li,
-.reach_out li {
-  list-style: none;
-  display: inline;
-  font-size: 19px;
-  text-transform: uppercase;
-  padding-right: 1.3em;
-  margin-right: 1em;
-  background-image: url(images/Vector.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.header {
-  width: 30%;
-}
-
-section.top {
+div.top {
   background-color: #b4bdcb;
   background-image: url(images/Infinity.png);
   background-repeat: no-repeat;
   background-position: 1em 1em;
-  position: absolute;
 }
 
-section.middle {
-  height: 35%;
-  position: absolute;
+div.middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.top h2 {
+div.middle h5 {
+  margin: 0.5rem auto 0;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 90%;
+  font-size: 41px;
   font-weight: normal;
-  font-size: 59px;
-  line-height: 1.2em;
-  text-transform: capitalize;
-  margin-bottom: 20%;
+  border-bottom: 2px solid #fff;
+}
+
+div.middle a {
+  display: inline-block;
+  margin-left: 10%;
+  margin-bottom: 1%;
 }
 
 .science {
@@ -192,30 +204,15 @@ section.middle {
 .science,
 .approach,
 .applications {
-  display: inline-block;
-  padding-top: 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 80%;
+  background-position: 50% 60%;
   background-size: auto auto;
-  width: 33%;
 }
 
-section.bottom {
+div.bottom {
   width: 100%;
-  height: 35%; /*982px;*/
   background-image: url(images/Rectangle.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-}
-
-section h5 {
-  display: block;
-  width: 60%;
-  margin: -100px auto 0 auto;
-  padding-bottom: 20px;
-  font-size: 41px;
-  font-weight: normal;
-  border-bottom: 2px solid #fff;
+  background-size: cover;
 }
