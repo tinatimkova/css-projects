@@ -115,11 +115,11 @@ table {
 }
 /* end reset browser styles */
 main {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
 }
 
-main menu ul {
+main ul {
   list-style: none;
   position: absolute;
   top: 3%;
@@ -128,7 +128,16 @@ main menu ul {
   line-height: 20px;
 }
 
-.header li, .science li, .approach li, .applications li, .reach_out li{
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header li,
+.science li,
+.approach li,
+.applications li,
+.reach_out li {
   list-style: none;
   display: inline;
   font-size: 19px;
@@ -148,12 +157,12 @@ main menu ul {
 }
 
 section.top {
-  background-color: #B4BDCB;
+  background-color: #b4bdcb;
   background-image: url(images/Infinity.png);
   background-repeat: no-repeat;
   background-position: 1em 1em;
-  height: 660px;
   width: 100%;
+  height: 40vh; /*660px;*/
 }
 
 .top h2 {
@@ -164,38 +173,41 @@ section.top {
   margin-bottom: 20%;
 }
 
-section.science {
-  background-color: #C9A3A4;
+.science {
+  background-color: #c9a3a4;
   background-image: url(images/science.png);
 }
 
-section.approach {
-  background-color: #A7CEEF;
+.approach {
+  background-color: #a7ceef;
   background-image: url(images/approach.png);
-
 }
 
-section.applications {
-  background-color:#ACB5AC;
+.applications {
+  background-color: #acb5ac;
   background-image: url(images/brain.png);
- 
 }
 
-.science, .approach, .applications {
-  padding-top: 180px;
+.science,
+.approach,
+.applications {
+  display: inline-block;
+  padding-top: 100px;
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center 80%;
-  float: left;
-  height: 420px;
-  width: 33.33%;
+  background-size: auto auto;
+  width: 33%;
+  height: 100%;
 }
 
-.science li, .approach li, .applications li {
+section.middle {
+  height: 40vh; /*729px;*/
 }
 
-section.reach_out {
-  clear: left;
-  height: 982px;
+section.bottom {
+  width: 100%;
+  height: 40vh; /*982px;*/
   background-image: url(images/Rectangle.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -204,9 +216,9 @@ section.reach_out {
 section h5 {
   display: block;
   width: 60%;
-  margin: -170px auto;
+  margin: -100px auto 0 auto;
   padding-bottom: 20px;
   font-size: 41px;
   font-weight: normal;
-  border-bottom: 2px solid #FFF;
+  border-bottom: 2px solid #fff;
 }
