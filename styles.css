@@ -144,6 +144,16 @@ a {
   cursor: pointer;
 }
 
+ul.navTop a,
+ul.navBottom a {
+  background-image: none;
+  line-height: 20px;
+}
+
+ul.navTop {
+  text-align: right;
+}
+
 div.top > div {
   display: inline-block;
   margin: 0 0 2% 5%;
@@ -160,15 +170,16 @@ ul.navBottom {
 
 ul.navTop {
   position: absolute;
-  top: 3%;
-  right: 3%;
+  top: 1em;
+  right: 1em;
 }
 
 div.top {
   background-color: #b4bdcb;
-  background-image: url(images/Infinity.png);
-  background-repeat: no-repeat;
-  background-position: 1em 1em;
+  background-image: url(images/Infinity.png), url(images/BackgroundImg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 5% 1em, center center;
+  background-size: 4%, contain;
 }
 
 div.middle {
@@ -282,4 +293,8 @@ div.email input {
   font-family: Roboto;
   font-size: 100%;
   line-height: 16.41px;
+}
+
+ul.navBottom a {
+  color: #858585;
 }
