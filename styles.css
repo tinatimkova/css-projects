@@ -132,12 +132,14 @@ h2 {
 }
 
 a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   font-size: 19px;
   text-transform: uppercase;
   padding-right: 1.3em;
-  margin-right: 1em;
+  margin-right: 0.5em;
+  padding-bottom: 5px;
   background-image: url(images/Vector.png);
   background-repeat: no-repeat;
   background-position: right 40%;
@@ -148,6 +150,17 @@ ul.navTop a,
 ul.navBottom a {
   background-image: none;
   line-height: 20px;
+  padding: 5px 0;
+}
+
+a:hover {
+  border-bottom: 1px solid #fff;
+  -webkit-transform: translate(1px, -2px);
+  transform: translate(1px, -2px);
+}
+
+ul.navBottom a:hover {
+  border-bottom: 1px solid#858585;
 }
 
 ul.navTop {
@@ -156,9 +169,9 @@ ul.navTop {
 
 div.top > div {
   display: inline-block;
-  margin: 0 0 2% 5%;
+  margin: 0 0 2em 5%;
   border-top: 2px solid #fff;
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 ul.navTop,
@@ -166,6 +179,7 @@ ul.navBottom {
   list-style: none;
   line-height: 20px;
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 ul.navTop {
@@ -178,8 +192,8 @@ div.top {
   background-color: #b4bdcb;
   background-image: url(images/Infinity.png), url(images/BackgroundImg.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: 5% 1em, center center;
-  background-size: 4%, contain;
+  background-position: 5% 2em, center center;
+  background-size: 3%, contain;
 }
 
 div.middle {
