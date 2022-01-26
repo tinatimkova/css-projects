@@ -140,7 +140,7 @@ a {
   padding-bottom: 5px;
   background-image: url(images/Vector.png);
   background-repeat: no-repeat;
-  background-position: right 40%;
+  background-position: right 20%;
   cursor: pointer;
 }
 
@@ -203,9 +203,36 @@ div.top {
   background-size: 4%, contain;
 }
 
+.middle {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
 .middle section {
-  float: left;
-  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  height: 30em;
+}
+
+.middle .science {
+  background-color: #c9a3a4;
+  background-image: url(images/science.png);
+  order: 0;
+}
+
+.middle .approach {
+  background-color: #a7ceef;
+  background-image: url(images/approach.png);
+  order: 1;
+}
+
+.middle .applications {
+  background-color: #acb5ac;
+  background-image: url(images/brain.png);
+  order: 2;
 }
 
 div.middle h5,
@@ -219,8 +246,7 @@ div.bottom h5 {
 
 div.middle h5 {
   width: 80%;
-  margin: 1em auto;
-  margin-bottom: 90%;
+  margin: 0.5em auto;
 }
 
 div.bottom h5 {
@@ -231,24 +257,10 @@ div.bottom h5 {
 }
 
 div.middle a {
-  display: inline-block;
-  margin-left: 10%;
-  margin-bottom: 1%;
-}
-
-.science {
-  background-color: #c9a3a4;
-  background-image: url(images/science.png);
-}
-
-.approach {
-  background-color: #a7ceef;
-  background-image: url(images/approach.png);
-}
-
-.applications {
-  background-color: #acb5ac;
-  background-image: url(images/brain.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 2.5em;
 }
 
 .science,
