@@ -124,7 +124,7 @@ body {
 h2 {
   width: 30%;
   font-weight: normal;
-  font-size: 59px;
+  font-size: 48px;
   text-transform: capitalize;
   padding: 10% 0 10% 5%;
 }
@@ -133,11 +133,9 @@ a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 1.1em;
   text-transform: uppercase;
   padding-right: 1.3em;
-  margin-right: 0.5em;
-  padding-bottom: 5px;
   background-image: url(images/Vector.png);
   background-repeat: no-repeat;
   background-position: right 20%;
@@ -203,6 +201,10 @@ div.top {
   background-size: 4%, contain;
 }
 
+div.top div > a:first-of-type {
+  margin-right: 1.5em;
+}
+
 .middle {
   display: flex;
   flex-direction: row;
@@ -256,11 +258,9 @@ div.bottom h5 {
   text-align: left;
 }
 
-div.middle a {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 2.5em;
+div.middle section a {
+  margin: 1.5em 10%;
+  width: max-content;
 }
 
 .science,
@@ -291,7 +291,7 @@ div.bottom p {
 }
 
 div.bottom a {
-  margin-left: 5%;
+  margin: 0 0 1.5em 5%;
 }
 
 footer {
